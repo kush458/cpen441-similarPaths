@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+
+<header class="w3-container w3-black w3-padding-48 w3-center" id="myHeader">
+    <div class="w3-center w3-padding-32">
+    <img src="./assets/skiicon.png" style="max-height: 150px; margin: auto; padding-left: 50px;">
+    </div>
+</header>
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 29%;
+      margin: 25px;
+      height: 400px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+</style>
+
+<!-- Create Your Ski trip -->
+
+<div class="w3-third">
+  <div style="min-height:350px;">
+  </div>
+</div>
+
+<div class="column w3-display-container w3-white">
+  <div class="w3-card w3-container w3-padding-16">
+    <div>
+      <h3 class="w3-center" style="margin-bottom: 0px;"><strong>Plan your Ski trip!</strong></h3><br>
+      <hr style="margin-top: 0px;"/>
+      <form class="persona" action="#studentsLikeMe">
+        <label for="fname">What is your mode of travel?</label>
+        <select id="country" name="country">
+            <option value="none">Not selected</option>
+            <option value="ski">Ski</option>
+            <option value="snowboard">Snowboard</option>
+            <option value="sleds">Skidoo</option>      
+        </select><br><p style="margin: 15px;"></p>
+
+        <label for="lname">What tasks do you think will help you for your trip?</label>
+        <select id="country" name="country">
+            <option value="none">Not selected</option>
+            <option value="ski">Snow safety</option>
+            <option value="snowboard">Avalanche prevention</option>
+            <option value="sleds">Ski lessons</option>
+            <option value="ski">Snowboard lessons</option>
+            <option value="snowboard">Skidoo lessons</option>
+            <option value="sleds">Jumping course</option>      
+        </select><br><p style="margin: 15px;"></p>
+
+        <label for="lname">What is your current level of expertise?</label>
+        <select id="country" name="country">
+          <option value="none">Not selected</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select><br><p style="margin: 15px;"></p>
+
+        <!-- in weeks -->
+        <label for="lname">How much time do you have before your trip?</label> 
+        <select id="country" name="country">
+          <option value="none">Not selected</option>
+          <option value="some">1-4 weeks</option>
+          <option value="more">4-8 weeks</option>
+          <option value="many">8-12 weeks</option>
+        </select><br><br>
+      
+        <input onclick="window.open('./SkiPaths.html')" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div style="min-height:550px">
+  </div>
+</div>
+
+<div style="margin: 650px;"></div>
+
+</body>
+</html>

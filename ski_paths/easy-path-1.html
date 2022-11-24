@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Ski Trip Planner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="paths.css">
+</head>
+
+<body>
+
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:40px;margin-right:500px">
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-xxxlarge w3-text-black"><b>Jane's Ski plan</b></h1>
+            <hr style="width:50px;border:5px solid black" class="w3-round">
+            <table id="basic">
+                <tr>
+                    <th style="width: 40%;">Basic Level</th>
+                </tr>
+                <tr>
+                    <td><i>Basic Mountain Training</i> <br> (Any 2 from Avalanche prevention, weather prediction, wilderness
+                        survival)</td>
+                </tr>
+                <tr>
+                    <td><i>Basic Ski Training</i> <br> (Both Ski Techniques and Ski Jumping) </td>
+                </tr>
+                <tr>
+                    <td><i>Basic Equipment</i> <br> (Parka, Toque, Face Mask, Snow Pants, Gloves)</td>
+                </tr>
+            </table>
+            <hr>
+
+            <table id="intermediate">
+                <tr>
+                    <th style="width: 40%;">Intermediate Level</th>
+                    <!-- <th>Complete</th>
+                    <th>Current Progress</th>
+                    <th>Missing</th>
+                    <th>Used Progress</th> -->
+                </tr>
+                <tr>
+                    <td><i>Intermediate Mountain Training</i> <br> (Any 2 from Avalanche prevention, weather prediction, wilderness
+                        survival)</td>
+                    <!-- <td>&#10004;</td>
+                    <td></td>
+                    <td></td>
+                    <td>Intermediate Avalanche Prevention <br> Intermediate Wilderness Survival</td> -->
+                </tr>
+                <tr>
+                    <td><i>Intermediate Ski Training</i> <br> Intermediate Ski Techniques </td>
+                    <!-- <td> &#10004;</td>
+                    <td></td>
+                    <td></td>
+                    <td>Intermediate Ski Techniques</td> -->
+                </tr>
+                <tr>
+                    <td><i>Intermediate Equipment</i> <br> (Parka, Toque, Face Mask, Snow Pants, Gloves)</td>
+                    <!-- <td>&#10004;</td>
+                    <td></td>
+                    <td></td>
+                    <td>Thick Parka <br>
+                        Toque <br>
+                        Face Mask <br>
+                        Thin Snow Pants <br>
+                        Insulated Gloves
+                    </td> -->
+                </tr>
+            </table>
+            <hr>
+            <table id="advanced">
+                <tr>
+                    <th style="width: 40%;">Advanced Level</th>
+                    <!-- <th>Complete</th>
+                    <th>Current Progress</th>
+                    <th>Missing</th>
+                    <th>Used Progress</th> -->
+                </tr>
+                <tr>
+                    <td><i>Advanced Mountain Training</i> <br> (Any 2 from Avalanche prevention, weather prediction, wilderness
+                        survival)</td>
+                    <!-- <td>&#10004;</td>
+                    <td></td>
+                    <td></td>
+                    <td>Advanced Avalanche Prevention <br> Advanced Wilderness Survival</td> -->
+                </tr>
+                <tr>
+                    <td><i>Advanced Ski Training</i> <br> Advanced Ski Techniques </td>
+                    <!-- <td> &#10060;</td>
+                    <td></td>
+                    <td>Advanced Ski Techniques</td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td><i>Advanced Equipment</i> <br> (Parka, Toque, Face Mask, Snow Pants, Gloves)</td>
+                    <!-- <td>&#10060;</td>
+                    <td></td>
+                    <td>Thick Snow Pants</td>
+                    <td>Thick Parka <br>
+                        Toque <br>
+                        Face Mask <br>
+                        Insulated Gloves
+                    </td> -->
+                </tr>
+            </table>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+        function formSubmit() {
+            window.alert("Form submitted");
+        }
+
+        function onClickDud() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
+        function onClickCompletedCourses(id) {
+            var popup = document.getElementById(`${id}Popup`);
+            console.log(popup.classList);
+            popup.classList.toggle("show");
+        }
+
+        function onClickMissingCourses() {
+            var popup = document.getElementById("firstYearMissing");
+            popup.toggle("show");
+        }
+
+    </script>
+
+</body>
+
+</html>
