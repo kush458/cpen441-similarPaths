@@ -1,5 +1,5 @@
 # CPEN441Prototype
-Mid-fidel prototype of degree planner based an alternate conceptual model
+Mid-fidel prototype of degree planner based on an alternate conceptual model
 
 ## Install
 
